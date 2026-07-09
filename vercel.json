@@ -2,8 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "http://www.local.isengard.cn:16666/:path*"
+      "source": "/(.*)",
+      "destination": "http://www.local.isengard.cn:16666/$1"
     }
   ]
 }
