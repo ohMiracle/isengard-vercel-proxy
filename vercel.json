@@ -1,9 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "http://www.local.isengard.cn:16666/$1"
+      "src": "/(.*)",
+      "dest": "http://www.local.isengard.cn:16666/$1"
     }
   ]
 }
