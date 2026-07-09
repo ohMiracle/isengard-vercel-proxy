@@ -1,0 +1,45 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.isengard.cn"
+        }
+      ],
+      "destination": "http://www.local.isengard.cn:16666/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "read.isengard.cn"
+        }
+      ],
+      "destination": "http://read.local.isengard.cn:16666/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "nas.isengard.cn"
+        }
+      ],
+      "destination": "http://nas.local.isengard.cn:16666/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "file.isengard.cn"
+        }
+      ],
+      "destination": "http://file.local.isengard.cn:16666/:path*"
+    }
+  ]
+}
